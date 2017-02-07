@@ -1,6 +1,6 @@
 ##Create two functions that can input a matrix, invert it, then cache the inverted matrix so one can call it later
 
-##makeCacheMatrix stores the inputted matrix and the inverterd matrix in the global environment 
+##makeCacheMatrix stores the inputted matrix and the inverterd matrix in the global environment.
 
 makeCacheMatrix <- function(x = matrix()) {
         
@@ -14,10 +14,7 @@ makeCacheMatrix <- function(x = matrix()) {
         getsolve <- function() i
         
         list(set = set, get = get, setsolve = setsolve, getsolve = getsolve)
-        
 }
-
-
 
 ##cacheSolve first checks to see if an inverted matrix is stored in makeCacheMatrix. If the inverted matrix is stored,
 ##the function returns it. If there is not an inverted matrix stored, it inverts the matrix and stores it.
